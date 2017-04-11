@@ -15,14 +15,14 @@ namespace TrelloReporting.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "In development";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "In development";
 
             return View();
         }
@@ -30,6 +30,11 @@ namespace TrelloReporting.Controllers
         public IActionResult Error()
         {
             return View();
+        }
+
+        public int isSelected( int selection )
+        {
+            return selection;
         }
     }
 }
